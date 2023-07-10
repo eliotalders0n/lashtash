@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Head from "./template/head";
 import { Container, Button, Col, Card, Row, Form } from "react-bootstrap";
 import firebase from "./../firebase";
-import useGetGroup from "./hooks/useGetOrders";
 import useGetPosts from "./hooks/useGetPosts";
 import { useNavigate } from "react-router-dom";
 
@@ -45,13 +44,9 @@ function Profile(props) {
         <Card
           className="mx-auto my-2"
           style={{
-            maxWidth: "30rem",
             border: "none",
-            padding: "0",
-            boxShadow: "2px 2px 8px 4px rgba(0, 60, 60, 0.3)",
-            backgroundColor: "rgb(220,220,220)",
+            backgroundColor: "white",
             // backgroundImage: `url("https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")`,
-            filter: "grayscale(75%)",
             backgroundSize: "cover",
             color: "black",
             height: "auto",
@@ -60,7 +55,7 @@ function Profile(props) {
           <Card.Body>
             <Card.Title>Update Profile</Card.Title>
             <p className="text-muted">
-              Please contact your group admin to change account details
+              Please be careful when changing account details
             </p>
             <Form className="my-3">
               <Form.Group as={Col} controlId="formGridEmail">
@@ -141,8 +136,9 @@ function Profile(props) {
               </Button>
             </Form>
           </Card.Body>
-        </Card>
+          <br />
         <br />
+        </Card>
       </Container>
 
       {/* <Container fluid className="d-flex justify-content-center my-5">

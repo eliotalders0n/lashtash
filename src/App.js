@@ -37,11 +37,11 @@ const App = () => {
       {!state && <LoginRoutes />}
       {state && <Router />}
       {isLoading && (
-        <Container>
+        <Container fluid className="d-flex justify-content-center">
           <Row md={1} xs={1} className="g4">
             <Col>
               <div className="loading-overlay">
-                <Spinner animation="grow" role="status" variant="dark">
+                <Spinner animation="grow" style={{width: "10vh", height :"10vh", marginTop: "30vh"}} role="status" variant="dark">
                   <span className="visually-hidden">Loading...</span>
                 </Spinner>
               </div>

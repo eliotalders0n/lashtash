@@ -79,8 +79,8 @@ function Feed(props) {
           Mixed_Hybrid
         </ListGroup.Item>
       </ListGroup>
+      <Button variant="dark" onClick={handleShow} className="my-2" style={{width: "100%"}}>Custom Order</Button>
       <Head />
-
       <Container fluid className="d-flex justify-content-center">
         <Row>
           {/* {Posts.filter((post) => post.group === Group.GroupNumber).map(

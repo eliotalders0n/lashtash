@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Feed from "./components/feed";
 import Profile from "./components/profile";
 import Booking from "./components/booking";
-// import Explore from "./components/map";
+import History from "./components/history";
 
 function Router(props) {
   return (
@@ -14,7 +14,7 @@ function Router(props) {
         <Route path="/feed" element={<Feed />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/booking" element={<Booking />} />
-        {/* <Route path="/help" element={<Help />} /> */}
+        <Route path="/history" element={<History />} />
       </Routes>
     </BrowserRouter>
   );

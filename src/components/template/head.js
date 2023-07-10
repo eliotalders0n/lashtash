@@ -9,7 +9,7 @@ function Head(props) {
         <Navbar.Collapse className="justify-content-center">
           <Col md={2} className="mx-auto">
             <Nav.Link
-              href="/explore"
+              href="/history"
               style={{
                 fontSize: "3vh",
                 textDecoration: "underline",
@@ -29,7 +29,7 @@ function Head(props) {
               }}
             >
               <Button variant="dark">
-                Custom Order
+                Home
               </Button>
               
             </Nav.Link>
