@@ -37,7 +37,7 @@ function Login(props) {
       <Row className="d-flex justify-content-center my-5">
         <Col md={12} className="text-center">
           <h1 style={{ fontSize: "10vh" }}>
-            Mer<span style={{ color: "purple" }}>ge</span>
+            <span style={{ color: "purple" }}>Lash~tash</span>
           </h1>
         </Col>
         <Col className="my-2">

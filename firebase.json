@@ -1,11 +1,11 @@
 {
   "firestore": {
     "rules": "firestore.rules",
-    "site": "lashtash",
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
     "public": "build",
+    "site": "lashtash",
     "ignore": [
       "firebase.json",
       "**/.*",

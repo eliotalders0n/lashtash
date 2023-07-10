@@ -222,12 +222,22 @@ function Feed(props) {
           </Modal.Header>
           <Modal.Body>
             <Form>
-              <Form.Group as={Row} className="mb-3" controlId="formGridState">
+              <Card.Img
+                variant="top"
+                style={{borderRadius: "5px"}}
+                src="https://images.unsplash.com/photo-1548902378-2ec44c906391?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+              />
+              <Form.Group as={Row} className="mb-3 my-3" controlId="formGridState">
                 <Form.Label>Session Type</Form.Label>
                 <Col sm={10}>
                   <Form.Select defaultValue="Choose...">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Lash Extension Application</option>
+                    <option>Lash Extension Fill/Touch-Up</option>
+                    <option>Lash Lift</option>
+                    <option>Lash Tinting</option>
+                    <option>Lash Removal</option>
+                    <option>Lash Consultation</option>
                   </Form.Select>
                 </Col>
               </Form.Group>
@@ -237,7 +247,14 @@ function Feed(props) {
                 <Col sm={10}>
                   <Form.Select defaultValue="Choose...">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Classical</option>
+                    <option>Volume</option>
+                    <option>Hybrid</option>
+                    <option>Mega Volume</option>
+                    <option>Colored</option>
+                    <option>Lash Strips</option>
+                    <option>Cluster Lashes</option>
+
                   </Form.Select>
                 </Col>
               </Form.Group>
@@ -247,19 +264,45 @@ function Feed(props) {
                 <Col sm={10}>
                   <Form.Select defaultValue="Choose...">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Cleansing</option>
+                    <option>Priming</option>
+                    <option>Lash lift</option>
+                    <option>Lash tinting</option>
+                    <option>Lash Serum</option>
+                    <option>Lash Mask</option>
+                    <option>Lash Comb/Brush</option>
                   </Form.Select>
                 </Col>
               </Form.Group>
 
               <Form.Group>
-                <img src="" style={{width: "80vh"}}/>
+                <img src="/lashmap.jpg" style={{ width: "50vh" }} />
               </Form.Group>
 
-              <p className="text-muted">Session Full-Set <br/>ZMW 45.00</p>
-              <p className="text-muted">Lash Type Classic Faux-Mink <br/> ZMW 45.00</p>
+              <Form.Group as={Row} className="mb-3" controlId="formGridState">
+                <Form.Label>Lash Style (choose one from image above)</Form.Label>
+                <Col sm={10}>
+                  <Form.Select defaultValue="Choose...">
+                    <option>Choose...</option>
+                    <option>Natural eye</option>
+                    <option>Open eye</option>
+                    <option>Cat eye</option>
+                    <option>Doll eye</option>
+                  </Form.Select>
+                </Col>
+              </Form.Group>
+
+              <p className="text-muted">
+                Session Full-Set <br />
+                ZMW 45.00
+              </p>
+              <p className="text-muted">
+                Lash Type Classic Faux-Mink <br /> ZMW 45.00
+              </p>
               <p className="lead">Sub-total : ZMW 90.00</p>
-              <p className="text-muted">Taxes and Labor <br/> ZMW 30.00</p>
+              <p className="text-muted">
+                Taxes and Labor <br /> ZMW 30.00
+              </p>
               <p className="lead">Total : ZMW 120.00</p>
               <Form.Group
                 as={Row}
@@ -270,19 +313,21 @@ function Feed(props) {
                   <Form.Check label="I agree to the terms and conditions of LashTash" />
                 </Col>
               </Form.Group>
-
-              <Form.Group as={Row} className="mb-3">
-                <Col sm={{ span: 10, offset: 2 }}>
-                  <Button type="submit">Sign in</Button>
-                </Col>
-              </Form.Group>
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="outline-dark" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary">Understood</Button>
+            <Button variant="dark">
+              <a
+                href="/booking"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {" "}
+                Book Now
+              </a>
+            </Button>
           </Modal.Footer>
         </Modal>
       </Container>
